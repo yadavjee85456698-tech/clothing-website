@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Clothing Store</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .banner {
+            background-color: #e8d9c5;
+            text-align: center;
+            padding: 45px 15px;
+        }
+
+        .banner h2 {
+            font-size: 32px;
+        }
+
+        .products {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            color: #087443;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #087443;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        .button:hover {
+            background-color: #055c34;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .product {
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .banner h2 {
+                font-size: 26px;
+            }
+
+            nav a {
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Clothing Store</h1>
+        <p>Your Style, Your Fashion</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="banner" id="home">
+        <h2>Latest Fashion Collection</h2>
+        <p>Discover your favourite style.</p>
+    </section>
+
+    <section class="products" id="products">
+
+        <h2>Our Products</h2>
+
+        <div class="product-list">
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80"
+                    alt="Casual T-Shirt">
+
+                <h3>Casual T-Shirt</h3>
+                <p class="price">₹499</p>
+
+                <a class="button"
+                   href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Casual%20T-Shirt"
+                   target="_blank">
+                    Order Now
+                </a>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&q=80"
+                    alt="Fashion Jacket">
+
+                <h3>Fashion Jacket</h3>
+                <p class="price">₹1,299</p>
+
+                <a class="button"
+                   href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Fashion%20Jacket"
+                   target="_blank">
+                    Order Now
+                </a>
+            </div>
+
+            <div class="product">
+                <img
+                    src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=500&q=80"
+                    alt="Denim Jeans">
+
+                <h3>Denim Jeans</h3>
+                <p class="price">₹899</p>
+
+                <a class="button"
+                   href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20order%20Denim%20Jeans"
+                   target="_blank">
+                    Order Now
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+
+        <p>For orders and enquiries, contact our store.</p>
+
+        <p>Phone: 9876543210</p>
+
+        <p>© 2026 My Clothing Store</p>
+    </footer>
+
+</body>
+</html>
